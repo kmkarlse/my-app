@@ -1,8 +1,9 @@
 import React from "react";
+import Title from '../components/Title'
 
 export default function MyComponent() {
     return <>
-        <h1>My first Component</h1>
+        <Title text="My first component"/>
         
     </>
 }
