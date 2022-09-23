@@ -1,19 +1,34 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { Component } from 'react'
+import React, { Component, useState } from 'react'
 import MyComponent from "../components/MyComponent"
 import Title from '../components/Title'
 import Wrapper from '../components/Wrapper'
 import Food from '../components/Food'
-//[label /pages/index.js]
+import Alert from '../components/Alert'
+
+
+
+
 
 export default class extends Component {
-  render () {
+
+  render = () => {
+
+    const [inputValue, setInputValue] = useState('Test')
     
+    setInputValue("");
+    
+  
+    return (
+      
 
-    return <>
+      <section>
       <MyComponent />
-      <Wrapper> <Title text="It works"/> </Wrapper>
+      <Wrapper> <Title text="It works"/></Wrapper>
       <ul> <Food /> </ul>
-    </>
-  }}
+      <Alert />
+      <p>{inputValue}</p>
+      </section>
 
+    )}}
+  
