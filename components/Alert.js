@@ -14,8 +14,9 @@ export default function Alert(props) {
 
     
     const HandleClick = () => {
-        console.log("clicked"); 
-        alert(props.inputValue);
+        console.log("clicked", props.inputValue); 
+       //alert(props.inputValue);
+
     }
     
 
